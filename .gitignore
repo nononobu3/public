@@ -1,0 +1,48 @@
+# WordPress コアファイル（必要に応じてコメントアウト）
+/wp-admin/
+/wp-includes/
+
+# WordPress 設定ファイル（機密情報を含むため除外）
+wp-config.php
+
+# アップロードファイル
+/wp-content/uploads/
+
+# プラグイン（必要に応じてコメントアウト）
+/wp-content/plugins/
+
+# キャッシュ・バックアップ系
+/wp-content/cache/
+/wp-content/backup*/
+/wp-content/updraft/
+/wp-content/ai1wm-backups/
+
+# ログファイル
+*.log
+debug.log
+/wp-content/debug.log
+
+# OS 固有ファイル
+.DS_Store
+Thumbs.db
+
+# エディタ設定
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 環境依存ファイル
+.env
+.env.local
+
+# Node.js (テーマ開発用)
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Composer
+vendor/
+
+# Local by Flywheel
+local-xdebuginfo.php
